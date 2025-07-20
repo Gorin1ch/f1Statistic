@@ -1,12 +1,8 @@
 package crud.tasks.f1_statistics.service;
 
-
 import crud.tasks.f1_statistics.model.LapData;
-
 import java.time.Duration;
 import java.util.List;
-import java.util.Optional;
-
 
 public interface LapDataService {
     void save(LapData lapData);
