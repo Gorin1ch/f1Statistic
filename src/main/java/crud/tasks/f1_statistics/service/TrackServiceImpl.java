@@ -5,7 +5,6 @@ import crud.tasks.f1_statistics.dto.response.TrackDtoResponse;
 import crud.tasks.f1_statistics.model.Track;
 import crud.tasks.f1_statistics.repository.TrackRepository;
 import lombok.AllArgsConstructor;
-import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.stream.Collectors;

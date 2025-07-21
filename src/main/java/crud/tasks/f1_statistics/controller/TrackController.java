@@ -5,7 +5,6 @@ import crud.tasks.f1_statistics.dto.response.TrackDtoResponse;
 import crud.tasks.f1_statistics.service.TrackService;
 import lombok.AllArgsConstructor;
 import org.springframework.http.ResponseEntity;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
