@@ -8,7 +8,7 @@ import java.util.List;
 
 public interface DriverService {
     List<DriverDtoResponse> getAll();
-    DriverDtoResponse getById(Long id);
+    DriverDtoResponse findDriverById(Long id);
     DriverDtoResponse save(DriverDtoRequest request);
     DriverDtoResponse create(DriverDtoRequest request);
 }

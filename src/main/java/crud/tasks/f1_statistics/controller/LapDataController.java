@@ -3,7 +3,7 @@ package crud.tasks.f1_statistics.controller;
 
 import crud.tasks.f1_statistics.dto.request.LapDataDtoRequest;
 import crud.tasks.f1_statistics.mapper.LapDataMapper;
-import crud.tasks.f1_statistics.model.LapData;
+import crud.tasks.f1_statistics.entity.LapData;
 import crud.tasks.f1_statistics.service.LapDataService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;

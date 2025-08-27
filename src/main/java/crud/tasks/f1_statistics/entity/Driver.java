@@ -1,26 +1,25 @@
-package crud.tasks.f1_statistics.model;
-
+package crud.tasks.f1_statistics.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.experimental.SuperBuilder;
 
-@Data
 @Entity
+@Data
 @SuperBuilder(toBuilder = true)
 @NoArgsConstructor
-public class Track{
+@AllArgsConstructor
+public class Driver {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String trackName;
-    private String country;
-    private String city;
-    private Long lengthInMeters;
-    private int turnCount;
+    private String driverName;
+    private String team;
+    private Long number;
 }

@@ -1,9 +1,9 @@
 package crud.tasks.f1_statistics.mapper;
 
 import crud.tasks.f1_statistics.dto.request.LapDataDtoRequest;
-import crud.tasks.f1_statistics.model.Driver;
-import crud.tasks.f1_statistics.model.LapData;
-import crud.tasks.f1_statistics.model.Track;
+import crud.tasks.f1_statistics.entity.Driver;
+import crud.tasks.f1_statistics.entity.LapData;
+import crud.tasks.f1_statistics.entity.Track;
 import crud.tasks.f1_statistics.repository.DriverRepository;
 import crud.tasks.f1_statistics.repository.TrackRepository;
 import lombok.RequiredArgsConstructor;

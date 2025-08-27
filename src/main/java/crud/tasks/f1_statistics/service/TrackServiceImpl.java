@@ -2,7 +2,7 @@ package crud.tasks.f1_statistics.service;
 
 import crud.tasks.f1_statistics.dto.request.TrackDtoRequest;
 import crud.tasks.f1_statistics.dto.response.TrackDtoResponse;
-import crud.tasks.f1_statistics.model.Track;
+import crud.tasks.f1_statistics.entity.Track;
 import crud.tasks.f1_statistics.repository.TrackRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;

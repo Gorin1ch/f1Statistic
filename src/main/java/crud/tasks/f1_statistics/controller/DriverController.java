@@ -7,7 +7,6 @@ import crud.tasks.f1_statistics.service.DriverService;
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -15,7 +14,7 @@ import java.util.List;
 @RestController
 @AllArgsConstructor
 @RequestMapping("/api/driver")
-public class DrvierController {
+public class DriverController {
     private final DriverService driverService;
 
     @GetMapping
@@ -23,13 +22,13 @@ public class DrvierController {
         return ResponseEntity.ok(driverService.getAll());
     }
 
-    @GetMapping
-    public ResponseEntity<DriverDtoResponse> getById(@PathVariable Long id) {
-        return ResponseEntity.ok(driverService.getById(id));
+    @GetMapping("/{id}")
+    public ResponseEntity<DriverDtoResponse> getDriverById(@PathVariable Long id) {
+        return ResponseEntity.ok(driverService.findDriverById(id));
     }
 
     @PostMapping
-    public ResponseEntity<DriverDtoResponse> save(@Validated @RequestBody DriverDtoRequest request) {
+    public ResponseEntity<DriverDtoResponse> save(@RequestBody DriverDtoRequest request) {
         DriverDtoResponse response = driverService.save(request);
         return ResponseEntity.status(HttpStatus.CREATED).body(response);
     }

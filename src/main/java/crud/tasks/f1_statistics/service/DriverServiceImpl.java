@@ -2,7 +2,7 @@ package crud.tasks.f1_statistics.service;
 
 import crud.tasks.f1_statistics.dto.request.DriverDtoRequest;
 import crud.tasks.f1_statistics.dto.response.DriverDtoResponse;
-import crud.tasks.f1_statistics.model.Driver;
+import crud.tasks.f1_statistics.entity.Driver;
 import crud.tasks.f1_statistics.repository.DriverRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -31,7 +31,7 @@ public class DriverServiceImpl implements DriverService{
     }
 
     @Override
-    public DriverDtoResponse getById(Long id){
+    public DriverDtoResponse findDriverById(Long id){
         Driver driver = driverRepository.findById(id).orElseThrow();
             return DriverDtoResponse.builder()
                     .id(driver.getId())

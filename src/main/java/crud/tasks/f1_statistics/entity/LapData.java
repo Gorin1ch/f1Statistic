@@ -1,4 +1,4 @@
-package crud.tasks.f1_statistics.model;
+package crud.tasks.f1_statistics.entity;
 
 
 import jakarta.persistence.*;
